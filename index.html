@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> PhD-HCMUE </title>
+	<!--Favicons-->
+	<link rel="icon" type="image/png" href="images/hcmue_favicon2.png"/>
+	<!-- Moj Font Awesome, nam.fon.01, 20kucagao12-->
+	<script src="https://kit.fontawesome.com/e7bac001a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<main><p> THIS IS MY MAIN CODE </p></main>
+
+	<footer>
+		<p>Think of a more interesting footer </p>
+	</footer>
+	&ltimg&gt tag includes width and height attributes
+
+	<figure>
+		<img src="images/gaobo01.jpg" width="500px" 
+			 alt="Moja deca">
+		<figcaption> Set image size 500px </figcaption>
+	</figure>
+	<!--
+	<figure>
+		<img src="images/bo01.jpg" alt="Phuong Vy">
+		<figcaption> Default image size </figcaption>
+	</figure> -->
+	<figure>
+		<img src="images/bo01.jpg" alt="Phuong Vy"
+			width="500px" height="500px">
+		<figcaption>Skewed image size</figcaption>
+	</figure>
+	<figure>
+		<img src="images/gaobo02.jpg?WSZQDX<p></p>" alt="Moja deca" width="50%" height="50%">
+		<figcaption>Relative image size</figcaption>
+	</figure>
+
+	<!--Font Awesome -->
+	<i class="fa fa-car"></i>
+	<i class="fa fa-car" style="font-size:48px;"></i>
+	<i class="fa fa-car" style="font-size:60px;color:red;"></i> <br>
+
+	<i class="fas fa-database fa-xs"></i>
+	<i class="fas fa-database fa-md"></i>
+	<i class="fas fa-database fa-lg"></i>
+	<i class="fas fa-database fa-1x"></i>
+	<i class="fas fa-database fa-3x"></i>
+	<i class="fas fa-database fa-5x"></i>
+	<br>
+	<i class="fas fa-address-card fa-5x"></i>
+	<br>
+
+
+	<a href="https://twitter.com/" aria-label="Twitter"><i class="fab fa-twitter fa-5x"></i></a>
+	<br>
+
+	<!--Links-->
+	<a href="https://hcmue.edu.vn/vi/">HCMC University of Education</a> <br>
+	The &lta&gt tag stands for <i>anchor link</i> <br>
+	Type of Links:
+	<ol>
+		<li>Absolute link</li>
+		<li>Relative link</li>
+		<li>Internal link</li>
+		<li>Graphical link</li>
+	</ol>
+	<ul>
+		<li> Relative References: </li>
+			<a href="example.html"> Example Page Font Awesome</a> <br>
+		<li> Using Images as the Link:</li>
+			<a href="https://hcmue.edu.vn/vi/">
+				<img src="images/hcmue_favicon.png" alt="HCMUE logo">
+			</a>
+		<li> Embedded Link</li>
+	</ul>
+	Anchor can take a target attribute:<br>
+	<ul>
+		<li>_self - default action</li>
+		<li>_blank - open in new tab or windows</li>
+		<li>_top and _parent</li>
+	</ul>
+	<h2>Multimedia: music & video</h2><br>
+	HTML5 Multimedia: <br>
+	<ul>
+		<li>Designed to avoid the use of extra software to play music/video</li>
+		<li>Not fully implemented</li>
+	</ul>
+	<h3>Video</h3>
+	<video controls loop autoplay="1" muted="1"> <!--controls-->
+		<source src=http://techslides.com/demos/sample-videos/small.webm type=video/webm>
+		Your browser does not support the <code>video</code>element\
+	</video> <br>
+	<video controls autoplay muted>
+  		<source src="movie.mp4?autoplay=1" type="video/mp4">
+  		<source src="movie.ogg?autoplay=1" type="video/ogg">
+
+  		Your browser does not support the video tag.
+	</video><br>
+	<video autoplay="1" controls="1" muted="1" src="movie.mp4">
+  		Your browser does not support the video tag.
+	</video>
+	<p>After using jQuery play() or DOM maniupulation as suggested by the other answers, it was not still working (Video wasn't autoplaying) in the Chrome for Android (Version 56.0).
+	As per this post in developers.google.com, From Chrome 53, the autoplay option is respected by the browser, if the video is muted.
+	So using autoplay muted attributes in video tag enables the video to be autoplayed in Chrome browsers from version 53.
+	Excerpt from the above link:
+	Muted autoplay for video is supported by Chrome for Android as of version 53. Playback will start automatically for a video element once it comes into view if both autoplay and muted are set[...]
+	Muted autoplay is supported by Safari on iOS 10 and later.
+	Autoplay, whether muted or not, is already supported on Android by Firefox and UC Browser: they do not block any kind of autoplay.
+	</p>
+	<h2>Tables</h2>
+	<b>Simple Table</b>
+	<table>
+		<tr> <!--Table Heading-->
+			<th>Row One</th><th>Row Two</th><th>Row Three</th>
+		</tr>
+		<tr>
+			<td>One</td><td>Two</td><td>Three</td>
+		</tr>
+		<tr>
+			<td>Four</td><td>Five</td><td>Six</td>
+		</tr>
+	</table>
+	<b>Spanning Multiple Cells using rowspan and colspan</b>
+	<table border="1">
+		<caption>Table of Child and its Parent</caption>
+		<tr>
+			<th>Child's Name: </th><th>Parent's Name: </th>
+		</tr>
+		<tr>
+			<td rowspan="2">Catherine</td><td>Michael McCarthy</td>
+		</tr>
+		<tr>
+			<td>Colleen McCarthy</td>
+		</tr>
+		<tr>
+			<td>Maggie</td><td>Sheila McGee</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Edward</td><td>Catherine Howard</td>
+		</tr>
+		<tr>
+			<td>Jeff Howard</td>
+		</tr>
+	</table>
+	<h2>Useful Tags</h2>
+	<ul>
+		<li>Generic: &ltp&gt, &ltdiv&gt</li>
+		<li>Semantic: &ltheader&gt, &ltnav&gt, &ltfooter&gt, &ltfigure&gt</li>
+	</ul>
+	<address>222 Le Van Sy, Ward 14, District 3</address>
+	<hr>Khong biet la gi?!! Horizontal Rule
+
+	<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+
+	<hr>
+
+	<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+
+	<hr>
+
+	<p>JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.</p>
+
+	<blockquote cite="www.phdinfo.edu.vn">Gao & Bo</blockquote>
+	<a href = "http://www.umich.edu">Umich</a><br>
+	<a href="mailto:shayhowe@awesome.com?subject=Hi&body=How%20are%20 you">Email</a>
+	Use "%20" to add a space between words in your subject line.
+
+	<br>
+	<ol>
+		<li>Vegetables</li>
+		<li>Fruit
+			<ul>
+				<li>Bluberries</li>
+				<li>Bananas</li>
+			</ul>
+		</li>
+	</ol>
+
+	<ol>
+		<li>Vegetables</li>
+		<li>Fruit</li>
+		<ul>
+			<li>Bluberries</li>
+			<li>Bananas</li>
+		</ul>
+		
+	</ol>
+	<ul>	
+    	<li>Vegetables</li>	
+    	<li>Fruit
+       		<ol>				
+          		<li>Blueberries</li>
+	  			<li>Bananas</li>
+       		</ol>
+    </li>
+	</ul>
+	<table>
+  		<tr><th>Name</th><td>Colleen</td></tr>
+  		<tr><th>Age</th><td>26</td></tr>
+  		<tr><th>Team</th><td>Browns</td></tr>
+	</table>
+	<h2>Validating Tools Website</h2>
+	<ul>
+		<li>Validator W3C</li>
+		<li>WAVE extension</li>
+		<li>Funkify</li>
+	</ul>
+	<h2>Hosting Your Site</h2>
+	<ul>
+		<li>Domain names: edu.vn</li>
+		<li>Hosting service, IP adress</li>
+		
+		<a href="https://byet.host/" target="_blank" >https://byet.host/</a>
+	</ul>
+	
+	
+
+
+
+	
+
+	
+	
+	
+	
+
+
+</body>
+</html>
+<!--The address I use to validate my code is at https://validator.w3.org/ -->
